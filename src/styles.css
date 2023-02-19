@@ -261,7 +261,7 @@ h1 {
   background: var(--color-warning);
 }
 
-.restart-button {
+.banner-action-button {
   background: #e14f69;
   margin-top: 0.5rem;
   padding: 1rem;

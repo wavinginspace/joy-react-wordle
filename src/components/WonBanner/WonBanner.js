@@ -1,11 +1,10 @@
 import React from "react";
 
 import Banner from "../Banner";
-import RestartButton from "../RestartButton/RestartButton";
 
 function WonBanner({ numOfGuesses, handleRestart }) {
   return (
-    <Banner status="happy">
+    <Banner status="happy" action={handleRestart} actionText="Restart Game">
       <p>
         <strong>Congratulations!</strong> Got it in{" "}
         <strong>
@@ -13,7 +12,6 @@ function WonBanner({ numOfGuesses, handleRestart }) {
         </strong>
         .
       </p>
-      <RestartButton handleRestart={handleRestart} />
     </Banner>
   );
 }
